@@ -1,4 +1,6 @@
-# lavalink-smsblaster
+![Lavalink Logo](https://lavalink.us/wp-content/uploads/2017/09/g4638.png)
+
+# SMS Blaster
 A tool for sending maintenance and outage alerts via SMS
 
 ## API docs
