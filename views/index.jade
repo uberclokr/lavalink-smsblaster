@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  body
+    div.container
+
+      br
+      br
+      h1= title
+      p Please type the SMS alert you would like to send, exactly as you would like it to appear.
+
+      form(action='/blast',method='post')
+
+        div.mb-3
+          label.form-label Alert Message
+          textarea(id='alertmessage',type='text',value='',placeholder='Enter SMS (max 160 characters)',name='alertmessage',maxlength="160").form-control
+
+
+        div.mb-3
+          label.form-label Select Site(s)
+          select(id='sites',name='sites',multiple,aria-label="multiple select").form-select.form-control
+            each site in sites
+              option= site
+
+
+        div.mb-3
+          input(type="submit", value="Submit").form-control.btn.btn-primary

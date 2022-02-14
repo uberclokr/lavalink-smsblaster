@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Ignore config
+config.py
+
+# Ignore session data
+goto_auth_session
