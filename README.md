@@ -10,7 +10,7 @@ A tool for sending maintenance and outage alerts via SMS
 
 ## Prerequisites
 - python3
-- nodejs (with express module)
+- nodejs w/modules express, pm2
 
 ## Setup
 For first time use, you *MUST*...
@@ -30,7 +30,14 @@ goto_client_id, goto_client_secret, goto_redirect_uri, jive_owner_phone, uisp_to
 [3]==== Install node prerequisite packages =================================================
 
 > npm install express
+> sudo npm install pm2@latest -g
 
 [4]==== Sart the node web server from within the root directory ===============
 
+You have two(2) options -- either run in current shell...
+
 > npm start
+
+...or daemonize with pm2...
+
+> pm2 start app.js
