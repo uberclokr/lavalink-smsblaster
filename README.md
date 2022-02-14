@@ -1,6 +1,11 @@
 # lavalink-smsblaster
 A tool for sending maintenance and outage alerts via SMS
 
+## API docs
+UISP-NMS: https://unms.lavalink.us/nms/api-docs/#/
+UISP-CRM: https://unmscrm.docs.apiary.io/#
+GoTo/Jive: https://developer.goto.com/GoToConnect#tag/Messaging-Overview
+
 ## Prerequisites
 python3
 nodejs (with express module)
