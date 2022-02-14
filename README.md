@@ -9,8 +9,8 @@ UISP-CRM: https://unmscrm.docs.apiary.io/#
 GoTo/Jive: https://developer.goto.com/GoToConnect#tag/Messaging-Overview
 
 ## Prerequisites
-python3
-nodejs (with express module)
+- python3
+- nodejs (with express module)
 
 ## Setup
 For first time use, you *MUST*...
