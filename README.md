@@ -32,6 +32,7 @@ goto_client_id, goto_client_secret, goto_redirect_uri, jive_owner_phone, uisp_to
 > npm install express
 > sudo npm install pm2@latest -g
 
+See this guide for completing daemonized instance: https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-18-04
 [4]==== Sart the node web server from within the root directory ===============
 
 You have two(2) options -- either run in current shell...
