@@ -73,7 +73,7 @@ def get_access_token(auth_code):
     # Establish session by obtaining access token
     """ WORKING EXAMPLE CURL
     curl -X POST "https://api.getgo.com/oauth/v2/token" \
-    -H "Authorization: Basic MjZkYzczOWUtOWIzMi00ZGEyLTk2YmYtZTM2NDYwNDYwMTQ4Ok9uMDU3TjN6ZnZmSk1oUTk0NWdLNU9RYg==" \
+    -H "Authorization: Basic <token>" \
     -H "Accept:application/json" \
     -H "Content-Type: application/x-www-form-urlencoded" \
     -d "redirect_uri=https://lavalink.us&grant_type=authorization_code&code=eyJraWQiOiJvYXV0aHYyLmxtaS5jb20uMDIxOSIsImFsZyI6IlJTNTEyIn0.eyJzYyI6ImNhbGwtY29udHJvbC52MS5jYWxscy5jb250cm9sIGNhbGxzLnYyLmluaXRpYXRlIGNyLnYxLnJlYWQgbWVzc2FnaW5nLnYxLm5vdGlmaWNhdGlvbnMubWFuYWdlIG1lc3NhZ2luZy52MS5yZWFkIG1lc3NhZ2luZy52MS5zZW5kIG1lc3NhZ2luZy52MS53cml0ZSByZWFsdGltZS52Mi5ub3RpZmljYXRpb25zLm1hbmFnZSB1c2Vycy52MS5saW5lcy5yZWFkIHdlYnJ0Yy52MS5yZWFkIHdlYnJ0Yy52MS53cml0ZSIsInN1YiI6IjU5MDEyNjUxMjE5MzMzNDM0OTMiLCJhdWQiOiIyNmRjNzM5ZS05YjMyLTRkYTItOTZiZi1lMzY0NjA0NjAxNDgiLCJvZ24iOiJwd2QiLCJscyI6ImZkNThlZmUwLTMzMmUtNGQwMi1hZDQ3LWUzZjdkNjYwMjA0YSIsInR5cCI6ImMiLCJleHAiOjE2NDQxNzU1MzAsImlhdCI6MTY0NDE3NDkzMCwidXJpIjoiaHR0cHM6XC9cL2xhdmFsaW5rLnVzIiwianRpIjoiYTdkYjFiNjYtYjRhNS00NWFhLThmNDUtYTVjM2QwNzI2MDUxIn0.TPp4GsVzfp7E2w4L7JSMT9kBWct0_VC0eEMCfc5PpTrwwruOVPtNNEf8wsO9RMfcP87KMfst1u0-4nFRXcCvYEGHpclYlPFP1qTPE6ozxo9BeUqhqZNGntsbkP298YFyL2R08TvDJbz96I5lcuT_V3lmyarB4YjJ5Gs5KlBIoASeq1s5RmR3diDaiChqJ9Pqar7rn6_7CrDOCH_FfLSNhl9m6oY1DDOI1zl5EliuQUhMt_cnf7d91a9rcGdi5L_pYoRIVVVYEnNBgUYrTZreO33fs2WGi0G5vA84bK28ENmwoQpvdaW-LAgBu84M1mq4SV1vs8Rh8OLpp5zeEsYAZQ"
@@ -116,7 +116,7 @@ def refresh_session(session):
     """ EXAMPLE CURL
     curl --request POST 'https://api.getgo.com/oauth/v2/token' \
     --header 'Content-Type: application/x-www-form-urlencoded' \
-    --header 'Authorization: Basic YTIwfAKeNGYtODY4YS00MzM5LTkzNGYtNGRhMmQ3ODhkMGFhOjNuYU8xMElBMmFnY3ZHKzlJOVRHRVE9PQ==' \
+    --header 'Authorization: Basic <token>' \
     -d 'grant_type=refresh_token&refresh_token=eyJraWQiOiJvYXV0aHYyLmxt999...'
     """
     try:
