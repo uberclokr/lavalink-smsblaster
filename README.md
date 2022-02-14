@@ -1,11 +1,11 @@
 # lavalink-smsblaster
 A tool for sending maintenance and outage alerts via SMS
 
-# Prerequisites
+## Prerequisites
 python3
 nodejs (with express module)
 
-# Setup
+## Setup
 For first time use, you *MUST* execute smsblaster.py independently using the --init flag.
 > python3 smsblaster.py --init
 
